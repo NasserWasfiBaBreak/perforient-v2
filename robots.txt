@@ -1,4 +1,7 @@
+# Design preview (perforient-v2): not for search engines yet.
+# When this design goes live on perforient.com, restore:
+#   User-agent: *
+#   Allow: /
+#   Sitemap: https://www.perforient.com/sitemap.xml
 User-agent: *
-Allow: /
-
-Sitemap: https://www.perforient.com/sitemap.xml
+Disallow:

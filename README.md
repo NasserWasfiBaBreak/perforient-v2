@@ -1,5 +1,11 @@
 # PERFORIENT website
 
+> **Design preview (perforient-v2).** This repo holds the "Engineering Blueprint" redesign, shared with
+> partners at https://nasserwasfibabreak.github.io/perforient-v2/ for comparison with the current site
+> (https://nasserwasfibabreak.github.io/perforient/). Its pages carry `noindex` so search engines skip them.
+> If this design is chosen: remove the `robots` meta tags, restore `robots.txt`, and point the `og:image`
+> URLs at the live domain.
+
 Plain HTML/CSS/JS, so there is no build step. Upload the contents of this `site/` folder to any static host
 (Netlify, Vercel, Cloudflare Pages, GitHub Pages, or your domain's cPanel `public_html`).
 
