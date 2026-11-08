@@ -5,50 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Resolve links from the site root, whether hosted at github.io/perforient/ or at perforient.com/ -->
   <script>document.write('<base href="' + (location.hostname.endsWith("github.io") ? "/perforient/" : "/") + '">');</script>
-  <title>Page Not Found | PERFORIENT</title>
+  <title>Sheet Not Found | PERFORIENT</title>
   <meta name="robots" content="noindex">
-  <meta name="theme-color" content="#0B1F3A">
+  <meta name="theme-color" content="#F2EFE6">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
   <style>
-    .nf { min-height: 100vh; display: flex; align-items: center; padding: 120px 0 80px; }
-    .nf__code { font-family: var(--font-head); font-weight: 800; font-size: clamp(5rem, 16vw, 9rem); line-height: 1; letter-spacing: -0.04em; color: #fff; margin-bottom: 12px; }
-    .nf__code span { color: var(--orange); }
-    .nf h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
-    .nf .hero__sub { max-width: 560px; }
-    .nf__links { display: flex; flex-wrap: wrap; gap: 14px 24px; margin-top: 36px; font-size: .96rem; }
-    .nf__links a { color: #C9D3E3; }
+    .nf { min-height: calc(100vh - var(--header-h)); display: flex; align-items: center; padding: 64px 0; }
+    .nf__code { font-weight: 800; font-stretch: 125%; font-size: clamp(6rem, 22vw, 15rem); line-height: .85; letter-spacing: -0.03em; margin: 18px 0 10px; position: relative; display: inline-block; }
+    .nf__code::after { content: ""; position: absolute; left: -3%; right: -3%; top: 50%; height: .06em; background: var(--red); transform: rotate(-6deg); }
+    .nf .lead { margin-bottom: 30px; }
+    .nf__ctas { display: flex; flex-wrap: wrap; gap: 18px; }
+    .nf__links { display: flex; flex-wrap: wrap; gap: 14px 26px; margin-top: 40px; }
   </style>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
-
-<header class="site-header site-header--solid">
+<header class="site-header">
   <nav class="wrap nav" aria-label="Main">
     <a href="./" class="brand" aria-label="PERFORIENT home">
-      <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10"/><path d="M9 28 L17 20 L22 25 L31 14" fill="none" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M24.5 13.2 L31.6 13.2 L31.6 20.3" fill="none" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" fill="#0F2341"/><path d="M9 28 L17 20 L22 25 L31 14" fill="none" stroke="#FF6B2C" stroke-width="3.6" stroke-linecap="square"/><path d="M24.5 13.2 L31.6 13.2 L31.6 20.3" fill="none" stroke="#FF6B2C" stroke-width="3.6" stroke-linecap="square"/></svg>
       <span class="brand__name">PERFORIENT</span>
     </a>
+    <div class="nav__meta label" aria-hidden="true"><span>DWG <b>PF-404</b></span><span>REV <b>02</b></span></div>
   </nav>
 </header>
-
-<main id="main" tabindex="-1" class="hero nf">
-  <div class="wrap" style="position:relative">
-    <div class="nf__code">4<span>0</span>4</div>
+<main id="main" tabindex="-1" class="nf">
+  <div class="wrap">
+    <div class="hero__kicker label"><span class="dot" aria-hidden="true"></span>Error · sheet not found</div>
+    <div class="nf__code" aria-hidden="true">404</div>
     <h1>This page leaked out of the process.</h1>
-    <p class="hero__sub">The page you're looking for doesn't exist or has moved. Let's get you back on track.</p>
-    <div class="hero__ctas">
-      <a href="./" class="btn btn--primary">Back to homepage</a>
-      <a href="./#contact" class="btn btn--ghost-light">Get a Free Process Audit</a>
+    <p class="lead">The page you're looking for doesn't exist or has moved. Let's get you back on track.</p>
+    <div class="nf__ctas">
+      <a href="./" class="btn btn--solid">Back to homepage <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="./#contact" class="btn btn--line">Get a free process audit</a>
     </div>
     <div class="nf__links">
-      <a href="./#services">Services</a>
-      <a href="case-studies/engineering-firm.html">Engineering firm case study</a>
-      <a href="case-studies/educational-institution.html">Educational institution case study</a>
-      <a href="./#faq">FAQ</a>
+      <a class="link" href="./#services">Services</a>
+      <a class="link" href="case-studies/engineering-firm.html">Engineering case</a>
+      <a class="link" href="case-studies/educational-institution.html">Education case</a>
+      <a class="link" href="./#faq">FAQ</a>
     </div>
   </div>
 </main>
-
 </body>
 </html>

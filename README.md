@@ -4,7 +4,7 @@ Plain HTML/CSS/JS, so there is no build step. Upload the contents of this `site/
 (Netlify, Vercel, Cloudflare Pages, GitHub Pages, or your domain's cPanel `public_html`).
 
 ## Pages
-- `index.html`: homepage (hero, problem, services, results, process, why us, audit form)
+- `index.html`: homepage (hero diagram, diagnosis checklist, leak calculator, services, results, method, why us, FAQ, audit form)
 - `case-studies/engineering-firm.html`
 - `case-studies/educational-institution.html`
 
@@ -26,7 +26,19 @@ Open `assets/js/main.js` and fill in `PERFORIENT_CONFIG` at the top:
   github.io address. When perforient.com is connected, change them to `https://www.perforient.com/assets/img/og-image.png`.
 - **FAQ**: on the homepage, with matching FAQ structured data in the `<head>`. Edit both together.
 - **404 page**: `404.html` (GitHub Pages serves it automatically for missing pages).
-- **Fonts**: Inter and Manrope are self-hosted in `assets/fonts/` (SIL Open Font License).
+- **Fonts**: Archivo (headings and body) and IBM Plex Mono (annotations) are self-hosted in `assets/fonts/` (SIL Open Font License).
+
+## Design: "Engineering Blueprint"
+The site is styled as an engineering drawing set: paper and grid, ink lines, numbered "sheets",
+and red-orange "redline" markups for the fixes. Colors are tokens at the top of `assets/css/styles.css`.
+
+Interactive parts (all in `assets/js/main.js`):
+- **Process diagram** (`data-diagram="rd"` or `"enroll"`): a workflow with leaks. "Apply the fix" removes waste steps.
+  Edit the steps in the `DIAGRAMS` object.
+- **Symptom checklist** and **leak calculator**: their results are added to the audit form as hidden fields
+  (`symptoms`, `leak_estimate`) so they arrive with each request.
+- **Before/after case sheets** (`data-case`).
+- **Work order form**: each visitor gets a reference number (`work_order` field).
 
 ## Preview locally
 ```
